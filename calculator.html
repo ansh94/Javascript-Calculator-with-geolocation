@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Calculator</title>
+		<link rel="stylesheet" type="text/css" href="calc.css">
+        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+	</head>
+	<body id ="calculator">
+		<table class="calculator" id="calc">
+            <tr>
+                <td colspan="4" class="calc_td_result">
+                    <input  readonly="readonly" name="calc_result" id="calc_result" class="calc_result"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">	
+                        <input type="button" class="calc_btn" value="C" onclick="runclear()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&larr;" onclick="runcancel()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="%" onclick=typenumber("%") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="+" onclick=typenumber("+") />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="7" onclick=typenumber("7") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="8" onclick=typenumber("8") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="9" onclick=typenumber("9") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="-" onclick=typenumber("-") />
+                </td>
+            </tr>
+                        <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="4" onclick=typenumber("4") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="5" onclick=typenumber("5") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="6" onclick=typenumber("6") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="*" onclick=typenumber("*") />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="1" onclick=typenumber("1") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="2" onclick=typenumber("2") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="3" onclick=typenumber("3") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="/" onclick=typenumber("/") />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="0" onclick=typenumber("0") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&plusmn;" onclick= />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="." onclick=typenumber(".") />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="=" onclick="evalue()" />
+                </td>
+            </tr>
+        </table>
+
+        
+        
+        <div id="mapPlaceholder"></div>
+    
+
+        
+    <script type="text/javascript" src="calc.js"></script>
+	</body>
+</html>
